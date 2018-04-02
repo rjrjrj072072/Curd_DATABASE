@@ -1,10 +1,11 @@
-package curd_project;
+package com.databse_file;
+
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.databse_file.CURD_JDBC_CON_FILE;
+//import com.databse_file.CURD_JDBC_CON_FILE;
 
 import junit.framework.TestCase;
 
@@ -53,7 +54,7 @@ public class CURD_JUNIT_TEST extends TestCase{
 
     	CURD_JDBC_CON_FILE obj = new CURD_JDBC_CON_FILE();
 
-        int c = obj.insert("Harsha",299,"devloper","Indore");
+        int c = obj.insert("Harsha",2099,"devloper","Indore");
 
         assertEquals(1, c);
 
@@ -79,7 +80,7 @@ public class CURD_JUNIT_TEST extends TestCase{
 
  
 
-    @Test
+    @Ignore
 
     public  void test4() throws Exception
 

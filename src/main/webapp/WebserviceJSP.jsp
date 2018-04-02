@@ -7,11 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action ="Emp_Login.java" method="get">
+<form action ="rest/db/register" method="POST">
 <br>
-Name<input type ="text" name="UserName" value="">
+Name<input type ="text" name="empName" value="">
 </br>
+ID<input type ="text" name="id" value="">
+
 <br>
+Dept<input type ="text" name="dept" value="">
+<br>
+Location<input type ="text" name="location" value="">
+<br>
+WebService Insert
 <input type="submit" value="getDetails"/>
 </br>
 </form>

@@ -46,7 +46,22 @@ public class DBConnection {
     
     
     }
+    public ResultSet getInsertResultSet(String sqlQuery,Connection conn) throws SQLException{
+        System.out.println(sqlQuery);
+        String sqlquery=sqlQuery;
+        dbCon=conn;
+        try {
+            dbStmt=dbCon.createStatement();
+            dbRst =dbStmt.executeQuery(sqlquery);
+             
+            
+            
+        }
+        catch(Exception e) {}
+    return dbRst;
     
+    
+    }
     
     
 }
